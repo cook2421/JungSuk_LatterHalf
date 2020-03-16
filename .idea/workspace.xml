@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e928aa0a-a5a7-4795-82b1-e496dfb756ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaJungSuk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Apple1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Apple2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Apple3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Apple4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/AppleComp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Box1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Box2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Box3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Box4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Eatable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Fruit1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Fruit1BoxEx1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Fruit2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Fruit3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Fruit4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBox1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBox2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBox3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBoxEx2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBoxEx3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitBoxEx4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/FruitComp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Grape1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Grape2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Grape3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Grape4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/GrapeComp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Juice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Juicer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Toy1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Generics/Toy2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Generics/FruitBoxEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Generics/FruitBoxEx2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Generics/FruitBoxEx3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Generics/FruitBoxEx4.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZCUOtERb2uDF5bzn41m8XIGC09" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.FruitBoxEx4">
+    <configuration name="FruitBoxEx1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.FruitBoxEx1" />
+      <module name="JavaJungSuk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitBoxEx2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.FruitBoxEx2" />
+      <module name="JavaJungSuk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitBoxEx3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.FruitBoxEx3" />
+      <module name="JavaJungSuk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitBoxEx4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.FruitBoxEx4" />
+      <module name="JavaJungSuk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FruitBoxEx4" />
+        <item itemvalue="Application.FruitBoxEx3" />
+        <item itemvalue="Application.FruitBoxEx2" />
+        <item itemvalue="Application.FruitBoxEx1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e928aa0a-a5a7-4795-82b1-e496dfb756ec" name="Default Changelist" comment="" />
+      <created>1584317851617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584317851617</updated>
+      <workItem from="1584317853047" duration="6727000" />
+      <workItem from="1584342541436" duration="1270000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
