@@ -41,9 +41,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadEx9">
-    <configuration name="ThreadEx4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx4" />
+  <component name="RunManager" selected="Application.ThreadEx11">
+    <configuration name="ThreadEx10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx10" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx6" />
+    <configuration name="ThreadEx11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx11" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadEx11" />
+        <item itemvalue="Application.ThreadEx10" />
         <item itemvalue="Application.ThreadEx9" />
         <item itemvalue="Application.ThreadEx8" />
         <item itemvalue="Application.ThreadEx7" />
-        <item itemvalue="Application.ThreadEx6" />
-        <item itemvalue="Application.ThreadEx4" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +130,7 @@
       <workItem from="1584317853047" duration="6727000" />
       <workItem from="1584342541436" duration="7371000" />
       <workItem from="1584411015105" duration="4662000" />
+      <workItem from="1584539211989" duration="910000" />
     </task>
     <servers />
   </component>
