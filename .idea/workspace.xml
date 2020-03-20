@@ -27,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tricycleBO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,7 +129,7 @@
       <updated>1584317851617</updated>
       <workItem from="1584317853047" duration="6727000" />
       <workItem from="1584342541436" duration="7371000" />
-      <workItem from="1584411015105" duration="4662000" />
+      <workItem from="1584411015105" duration="4731000" />
     </task>
     <servers />
   </component>
