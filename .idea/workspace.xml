@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e928aa0a-a5a7-4795-82b1-e496dfb756ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Thread/ThreadEx10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Thread/ThreadEx11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Thread/ThreadEx11_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaJungSuk/Thread/ThreadEx11_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadEx11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,9 +46,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadEx9">
-    <configuration name="ThreadEx4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx4" />
+  <component name="RunManager" selected="Application.ThreadEx15">
+    <configuration name="ThreadEx11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx11" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx6" />
+    <configuration name="ThreadEx12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx12" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -68,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx7" />
+    <configuration name="ThreadEx13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx13" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx8" />
+    <configuration name="ThreadEx14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx14" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx9" />
+    <configuration name="ThreadEx15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx15" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadEx9" />
-        <item itemvalue="Application.ThreadEx8" />
-        <item itemvalue="Application.ThreadEx7" />
-        <item itemvalue="Application.ThreadEx6" />
-        <item itemvalue="Application.ThreadEx4" />
+        <item itemvalue="Application.ThreadEx15" />
+        <item itemvalue="Application.ThreadEx14" />
+        <item itemvalue="Application.ThreadEx13" />
+        <item itemvalue="Application.ThreadEx12" />
+        <item itemvalue="Application.ThreadEx11" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +134,6 @@
       <updated>1584317851617</updated>
       <workItem from="1584317853047" duration="6727000" />
       <workItem from="1584342541436" duration="7371000" />
-      <workItem from="1584411015105" duration="4731000" />
     </task>
     <servers />
   </component>
