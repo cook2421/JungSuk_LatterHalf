@@ -41,9 +41,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadEx21">
-    <configuration name="ThreadEx17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx17" />
+  <component name="RunManager" selected="Application.StaticAndNonStaticSynchronization">
+    <configuration name="SingletonSynchronized" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SingletonSynchronized" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx18" />
+    <configuration name="StaticAndNonStaticSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.StaticAndNonStaticSynchronization" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -68,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx19" />
+    <configuration name="StaticSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.StaticSynchronization" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx20" />
+    <configuration name="SynchronizedBlock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SynchronizedBlock1" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadEx21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadEx21" />
+    <configuration name="SynchronizedBlock2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SynchronizedBlock2" />
       <module name="JavaJungSuk" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadEx21" />
-        <item itemvalue="Application.ThreadEx20" />
-        <item itemvalue="Application.ThreadEx19" />
-        <item itemvalue="Application.ThreadEx18" />
-        <item itemvalue="Application.ThreadEx17" />
+        <item itemvalue="Application.StaticAndNonStaticSynchronization" />
+        <item itemvalue="Application.StaticSynchronization" />
+        <item itemvalue="Application.SingletonSynchronized" />
+        <item itemvalue="Application.SynchronizedBlock2" />
+        <item itemvalue="Application.SynchronizedBlock1" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +129,12 @@
       <updated>1584317851617</updated>
       <workItem from="1584317853047" duration="6727000" />
       <workItem from="1584342541436" duration="7371000" />
-      <workItem from="1584950346506" duration="3957000" />
+      <workItem from="1584950346506" duration="4640000" />
+      <workItem from="1592443632499" duration="280000" />
+      <workItem from="1592448757848" duration="65000" />
+      <workItem from="1602486572150" duration="328000" />
+      <workItem from="1609310880108" duration="8000" />
+      <workItem from="1617674288129" duration="5776000" />
     </task>
     <servers />
   </component>
