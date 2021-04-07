@@ -1,4 +1,4 @@
-package Thread;
+package Thread.Synchronization;
 
 public class BasicSynchronization3 {
     private String mHero;

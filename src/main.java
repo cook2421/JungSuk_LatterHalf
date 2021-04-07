@@ -1,19 +1,11 @@
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.Arrays;
 
-public class main {
-    public static void main(String[] args) throws ParseException {
-        /*Calendar cal = Calendar.getInstance();
-        cal.add(cal.MONTH, -1); // 이전 달
+public class main{
+    public static void main(String[] args) {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMM");
-        System.out.println(formatter.format(cal.getTime()));*/
+        String[] phone_book = {"119", "97674223", "1195524421"};
+        String[] phone_book2 = {"123","456","789"};
+        String[] phone_book3 = {"12","123","1235","567","88"};
 
-        int a = 5;
-        int b = 7;
-
-        System.out.println(Math.round(a/(float)b));
     }
 }

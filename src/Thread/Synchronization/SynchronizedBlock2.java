@@ -1,4 +1,4 @@
-package Thread;
+package Thread.Synchronization;
 
 import java.util.HashMap;
 
