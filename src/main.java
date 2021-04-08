@@ -1,11 +1,22 @@
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class main{
     public static void main(String[] args) {
 
-        String[] phone_book = {"119", "97674223", "1195524421"};
-        String[] phone_book2 = {"123","456","789"};
-        String[] phone_book3 = {"12","123","1235","567","88"};
+        String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
+
+        Map<String, Integer> map = new HashMap<>();
+
+        for(String[] items : clothes){
+            String itemClass = items[items.length-1];
+            if(map.get(itemClass) == null){
+                map.put(itemClass, 1);
+            } else {
+                map.put(itemClass, map.get(itemClass)+1);
+            }
+        }
+
 
     }
 }
