@@ -1,0 +1,21 @@
+[정의]
+애너테이션이 적용가능한 대상을 지정하는데 사용된다.
+
+[예시]
+@Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, MODULE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface SuppressWarnings {
+    String[] value();
+}
+
+[적용대상 종류]
+ANNOTATION_TYPE : 애너테이션
+CONSTRUCTOR : 생성자
+FIELD : 필드(멤버변수, enum상수)
+LOCAL_VARIABLE : 지역변수
+METHOD : 메소드
+PACKAGE : 패키지
+PARAMETER : 매개변수
+TYPE : 타입(클래스, 인터페이스, enum)
+TYPE_PARAMETER : 타입 매개변수(JDK1.8)
+TYPE_USE : 타입이 사용되는 모든 곳(JDK1.8)
