@@ -1,0 +1,13 @@
+[정의]
+애너테이션이 자손 클래스에 상속되도록 한다.
+'@Inherited'가 붙은 애너테이션을 조상 클래스에 붙이면, 자손 클래스도 이 애너테이션이 붙은 것과 같이 인식된다.
+
+
+[예시]
+@Inherited                          // @SuperAnno가 자손까지 영향 미치게
+@interface SupperAnno { }
+
+@SuperAnno
+class Parent { }
+
+class Child extends Parent { }      // Child에 애너테이션이 붙은 것으로 인식
