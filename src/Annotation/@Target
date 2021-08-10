@@ -1,12 +1,14 @@
 [정의]
 애너테이션이 적용가능한 대상을 지정하는데 사용된다.
 
+
 [예시]
 @Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, MODULE})
 @Retention(RetentionPolicy.SOURCE)
 public @interface SuppressWarnings {
     String[] value();
 }
+
 
 [적용대상 종류]
 ANNOTATION_TYPE : 애너테이션
@@ -19,3 +21,17 @@ PARAMETER : 매개변수
 TYPE : 타입(클래스, 인터페이스, enum)
 TYPE_PARAMETER : 타입 매개변수(JDK1.8)
 TYPE_USE : 타입이 사용되는 모든 곳(JDK1.8)
+
+
+[적용대상 예시]
+@Target({FIELD, TYPE, TYPE_USE})        // 적용대상이 FIELD, TYPE, TYPE_USE
+public @interface MyAnnotation { }      // MyAnnotation을 정의
+
+@MyAnnotation       // 적용대상이 TYPE인 경우
+class MyClass {
+    @MyAnnotation   // 적용대상이 FIELD인 경우
+    int i;
+
+    @MyAnnotation   // 적용대상이 TYPE_USE인 경우
+    MyClass mc;
+}
