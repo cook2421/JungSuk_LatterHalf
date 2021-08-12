@@ -34,7 +34,7 @@ public class FruitBoxEx2 {
     } // main
 }
 
-/** 클래스 Fruit의 자손이면서 Eatable 인터페이스도 구현해야 한다면 **/
+/** 클래스 Fruit2의 자손이면서 Eatable 인터페이스도 구현해야 한다면 **/
 class FruitBox1<T extends Fruit2 & Eatable> extends Box2<T> {}
 
 
