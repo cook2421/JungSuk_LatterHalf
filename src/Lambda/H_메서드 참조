@@ -1,0 +1,52 @@
+람다식이 하나의 메소드만 호출하는 경우에는 '메소드 참조(method reference)'라는 방법으로 람다식을 간략히 할 수 있다.
+예를 들어, 문자열을 정수로 변환하는 람다식은 아래와 같이 작성할 수 있다.
+
+
+[예시 1]
+Function<String, Integer> f = (String s) -> Integer.parseInt(s);
+Function<String, Integer> f = Integer::parseInt;
+
+(Function의 지네릭 타입을 보면 input이 String, output이 Integer라는 것을 안다.
+ 단순히 String을 받아서 Integer로 변환하여 반환하는 것이므로 메소드 참조를 사용한다)
+
+
+[예시 2]
+BiFunction<String, String, Boolean> f = (s1, s2) -> s1.equals(s2);
+BiFunction<String, String, Boolean> f = String::equals;
+
+(BiFunction의 지네릭 타입을 보면 input이 String 두 개, output이 Boolean이라는 것을 안다.
+ 이 둘을 비교한 boolean값을 반환하면 되므로 메소드 참조를 사용한다)
+
+
+[예시 3]
+MyClass obj = new MyClass();
+Function<String, Boolean> f = (x) -> obj.equals(x);
+Function<String, Boolean> f = obj::equals;
+
+(이미 생성된 객체의 메소드를 람다식에서 사용한 경우에는 클래스 이름 대신 그 객체의 참조변수를 적어줘야 한다)
+
+
+[예시 4]
+Supplier<MyClass> s = () -> new MyClass();
+Supplier<MyClass> s = MyClass::new;
+
+Function<Integer, MyClass> f = (i) -> new MyClass(i);
+Function<Integer, MyClass> f = MyClass::new;
+
+Function<Integer, int[]> f = x -> new int[x];
+Function<Integer, int[]> f = int[]::new;
+
+(생성자를 호출하는 람다식도 메소드 참조로 변환할 수 있다)
+
+
+
+
+[정리]
+        <종류>                            <람다>                   <메소드 참조>
+ static 메소드 참조              (x) -> ClassName.method(x)      ClassName::method
+ 인스턴스 메소드 참조             (obj, x) -> obj.method(x)       ClassName::method
+ 특정 객체 인스턴스 메소드 참조    (x) -> obj.method(x)            obj::method
+
+
+* 하나의 메소드만 호출하는 람다식은
+  '클래스이름::메소드이름' 또는 '참조변수::메소드이름'으로 바꿀 수 있다.

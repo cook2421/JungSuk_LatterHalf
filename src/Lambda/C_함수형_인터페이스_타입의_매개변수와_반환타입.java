@@ -1,4 +1,4 @@
-package Functional.jungsuk;
+package Lambda;
 
 
 @java.lang.FunctionalInterface

@@ -1,0 +1,92 @@
+[스트림의 연산]
+* 중간 연산: 연산 결과가 스트림인 연산. 스트림에 연속해서 중간 연산할 수 있음.
+* 최종 연산: 연산 결과가 스트림이 아닌 연산. 스트림의 요소를 소모하므로 단 한번만 가능.
+
+stream.distinct().limit(5).sorted().forEach(System.out::println)
+        중간연산   중간연산  중간연산           최종연산
+        
+* 모든 중간연산의 결과는 스트림이지만, 연산 전의 스트림과 같은 것은 아니다(새로운 Stream 객체에 담김)
+
+
+
+[지연된 연산]
+* 스트림 연산에서 한 가지 중요한 점은 최종 연산이 수행되기 전까지는 중간 연산이 수행되지 않는다는 것이다.
+* 중간 연산을 호출하는 것은 단지 어떤 작업이 수행되어야하는지를 지정해주는 것일 뿐이다.
+* 최종 연산이 수행되어야 비로소 스트림의 요소들이 중간 연산을 거쳐 최종 연산에서 소모된다.
+
+
+
+[Stream<Integer> vs. IntStream]
+* 요소의 타입이 T인 스트림은 기본적으로 Stream<T>이지만, 오토박싱&언박싱으로 인한 비효율을 줄이기 위해 데이터 소스를
+  기본형으로 다루는 스트림 / IntStream / LongStream / DoubleStream 이 제공된다.
+* 이 스트림들이 더 효율적이고, 유용한 메소드들이 포함되어 있다.
+
+
+
+[병렬 스트림]
+* fork&join프레임웍으로 작업을 병렬처리할 수 있는데, 병렬 스트림은 내부적으로 이 프레임웍을 이용해서 자동적으로 연산을 병렬로 수행한다.
+* 반대로 병렬로 처리되지 않게 하려면 sequential()을 호출하면 된다.
+* 모든 스트림은 기본적으로 병렬 스트림이 아니므로 sequential()을 호출할 필요가 없다. (parallel()을 호출한 것을 취소할 때만 사용한다)
+
+int sum = strStream.parallel()
+                   .mapToInt(s -> s.length())
+                   .sum();
+
+
+
+[중간연산, 최종연산 정리]
+
+                            <중간연산>                                        <설명>
+Stream<T> distinct()                                                      중복을 제거
+Stream<T> filter(Predicate<T> predicate)                                  조건에 안 맞는 요소 제외
+Stream<T> limit(long maxSize)                                             스트림의 일부를 잘라낸다.
+Stream<T> skip(long n)                                                    스트림의 일부를 건너뛴다.
+Stream<T> peek(Consumer<T> action)                                        스트림의 요소에 작업수행
+
+
+Stream<T> sorted()
+Stream<T> sorted(Comparator<T> comparator)                                스트림의 요소를 정렬한다.
+
+
+Stream<R>    map(Function<T,R> mapper)
+DoubleStream mapToDouble(ToDoubleFunction<T> mapper)
+IntStream    mapToInt(ToIntFunction<T> mapper)
+LongStream   mapToLong(ToLongFunction<T> mapper)
+                                                                          스트림의 요소를 변환한다.
+Stream<R>    flatMap(Function<T, Stream<R>> mapper)
+DoubleStream flatMapToDouble(Function<T,DoubleStream> m)
+IntStream    flatMapToInt(Function<T,IntStream> m)
+LongStream   flatMapToLong(Function<T,LongStream> m)
+
+
+
+                            <최종연산>                                        <설명>
+void forEach(Consumer<? super T> action)
+void forEachOrdered(Consumer<? super T> action)                           각 요소에 지정된 작업 수행
+
+
+long count()                                                              스트림의 요소의 개수 반환
+
+
+Optional<T> max(Comparator<? super T> comparator)                         스트림의 최대값을 반환
+Optional<T> min(Comparator<? super T> comparator)                         스트림의 최소값을 반환
+
+
+boolean allMatch(Predicate<T> p)        // 모두 만족하는지
+boolean anyMatch(Predicate<T> p)        // 하나라도 만족하는지              주어진 조건을 모든 요소가 만족시키는지, 만족시키지 않는지 확인
+boolean noneMatch(Predicate<> p)        // 모두 만족하지 않는지
+
+
+Object[] toArray()
+A[]      toArray(IntFunction<A[]> generator)                              스트림의 모든 요소를 배열로 반환
+
+
+Optional<T> reduce(BinaryOperator<T> accumulator)
+T reduce(T identity, BinaryOperator<T> accumulator)                       스트림의 요소를 하나씩 줄여가면서(리듀싱) 계산한다.
+U reduce(U identity, BiFunction<U,T,U> accumulator, BinaryOperator<U> combiner)
+
+
+R collect(Collector<T,A,R> collector)                                     스트림의 요소를 수집한다. (주로 요소를 그룹화하거나 분할한 결과를 컬렉션에 담아 반환하는데 사용된다)
+R collect(Supplier<R> supplier, BiConsumer<R,T> accumulator, BiConsumer<R,R> combiner)
+
+

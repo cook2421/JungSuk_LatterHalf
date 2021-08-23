@@ -13,6 +13,10 @@ default Predicate<T>    negate()
 static <T> Predicate<T> isEqual(Object targetRef)
 
 
-
 [Function의 합성]
-* 수학에서 두 함수를 합성해서 하나의 새로운 함수를 만들어낼 수 있다는 것처럼
+* 두 람다식을 합성해서 새로운 람다식을 만들 수 있다.
+* f.andThen(g) <-> f.compose(g)
+
+
+[Predicate의 결합]
+* 여러 Predicate를 and(), or(), negate()로 연결해서 하나의 새로운 Predicate로 결합할 수 있다.

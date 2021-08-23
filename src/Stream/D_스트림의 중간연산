@@ -1,0 +1,59 @@
+[스트림 자르기 - skip(), limit()]
+* skip(3)은 처음 3개의 요소를 건너뛰고, limit(5)는 스트림의 요소를 5개로 제한한다.
+  기본형 스트림에도 skip()과 limit()가 정의되어 있는데, 반환 타입이 기본형 스트림이라는 점만 다르다.
+
+    Stream<T> skip(long n)
+    Stream<T> limit(long maxSize)
+
+
+
+[스트림의 요소 걸러내기 - filter(), distinct()]
+* distinct()는 스트림에서 중복된 요소들을 제거하고, filter()는 주어진 조건(Predicate)에 맞지 않는 요소를 걸러낸다.
+
+    Stream<T> filter(Predicate<? super T> predicate)
+    Stream<T> distinct()
+
+
+
+[정렬 - sorted()]
+* sorted()는 지정된 Comparator로 스트림을 정렬하는데, Comparator 대신 int값을 반환하는 람다식을 사용하는 것도 가능하다.
+  Comparator를 지정하지 않으면 스트림 요소의 기본 정렬 기준(Comparable)으로 정렬한다.
+
+    Stream<T> sorted()
+    Stream<T> sorted(Comparator<? super T> comparator)
+
+* JDK1.8부터 Comparator 인터페이스에 static 메소드와 디폴트 메소드가 많이 추가되었는데, 이 메소드를 이용하면 정렬이 쉬워진다.
+  스트림의 요소가 Comparable을 구현한 경우, 매개변수 하나짜리를 사용하면 되고,
+  그렇지 않은 경우, 추가적인 매개변수로 정렬기준(Comparator)을 따로 지정해줘야한다.
+
+    reversed()
+    thenComparing(~)       // 정렬 조건 추가 시
+
+    naturalOrder()
+    reverseOrder()
+    comparing(~)
+
+
+
+[변환 - map()]
+* 스트림의 요소에 저장된 값 중에서 원하는 필드만 뽑아내거나 특정 형태로 변환해야 할 때가 있다.
+  이 때 사용하는 것이 바로 map()이다.
+
+    Stream<R> map<Function<? super T, ? extends R> mapper)
+
+    fileStream.map(File::getName)                   // Stream<File> → Stream<String>
+        .filter(s -> s.indexOf('.') != -1)          // 확장자가 없는 것은 제외
+        .map(s -> s.substring(s.indexOf('.')+1))    // Stream<String> → Stream<String>
+
+
+
+[조회 - peek()]
+* 연산과 연산 사이에 올바르게 처리되었는지 확인하고 싶다면, peek()을 사용하자.
+  forEach()와 달리 스트림의 연산을 소모하지 않으므로 연산 사이에 여러 번 끼워 넣어도 문제가 되지 않는다.
+
+    fileStream.map(File::getName)
+        .filter(s -> s.indexOf('.') != -1)
+        .peek(s -> System.out.printf("filename=%s%n", s))       // 파일명을 출력한다.
+        .map(s -> s.substring(s.indexOf('.')+1))                // 확장자만 추출
+        .peek(s -> System.out.printf("extension=%s%n", s))      // 확장자를 출력한다.
+        .forEach(System.out::println);
